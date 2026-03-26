@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UniHub</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_resources">Resources</string>
+    <string name="title_student_assistant">Student Assistant</string>
+    <string name="hint_type_message">Type a message...</string>
+    <string name="hint_search_resources">Search resources...</string>
+    <string name="label_open">Open</string>
+</resources>
