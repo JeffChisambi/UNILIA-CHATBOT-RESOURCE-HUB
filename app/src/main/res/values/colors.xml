@@ -2,10 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#1976D2</color>
-    <color name="colorPrimaryDark">#1565C0</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#0D47A1</color> <!-- University Blue -->
+    <color name="colorPrimaryDark">#002171</color>
+    <color name="colorAccent">#FFC107</color> <!-- University Gold -->
+    <color name="colorSecondary">#D32F2F</color> <!-- University Red -->
+
     <color name="chat_user_bubble">#E3F2FD</color>
     <color name="chat_bot_bubble">#F5F5F5</color>
-    <color name="background_light">#FAFAFA</color>
+    <color name="background_light">#F8F9FA</color>
+
+    <color name="edit_text_bg">#F1F3F4</color>
 </resources>

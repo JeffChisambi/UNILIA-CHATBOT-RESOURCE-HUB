@@ -18,14 +18,13 @@ public class SplashActivity extends AppCompatActivity {
 
         LinearLayout logoContainer = findViewById(R.id.logo_container);
         
-        // Simple fade-in and scale animation
         Animation fadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         fadeIn.setDuration(1500);
         logoContainer.startAnimation(fadeIn);
 
-        // Delay for 3 seconds before moving to MainActivity
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            // Changed to LoginActivity instead of MainActivity
+            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         }, 3000);

@@ -3,7 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_gradient">
+    android:background="@color/colorPrimary">
+
+    <!-- Decorative Red and Gold Shapes -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/colorAccent"
+        android:alpha="0.1"
+        android:rotation="45"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginTop="-100dp" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/colorSecondary"
+        android:alpha="0.1"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="-75dp"
+        android:layout_marginBottom="-75dp" />
 
     <LinearLayout
         android:id="@+id/logo_container"
@@ -23,19 +46,25 @@
             android:fontFamily="sans-serif-black"
             android:text="UNILIA"
             android:textColor="@color/white"
-            android:textSize="48sp"
+            android:textSize="56sp"
             android:letterSpacing="0.1" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="4dp" />
 
         <TextView
             android:id="@+id/splash_text_chatbot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="CHATBOT"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:letterSpacing="0.5"
-            android:layout_marginTop="-8dp" />
+            android:fontFamily="sans-serif-medium"
+            android:text="CHATBOAT"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:letterSpacing="0.4"
+            android:layout_marginTop="8dp" />
 
     </LinearLayout>
 
@@ -43,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        android:indeterminateTint="@color/white"
+        android:indeterminateTint="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

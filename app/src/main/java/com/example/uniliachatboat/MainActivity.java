@@ -16,11 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         
-        // Set default fragment
+        // Set default fragment to Resources on login
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new ChatFragment())
+                    .replace(R.id.fragment_container, new ResourceFragment())
                     .commit();
+            
+            // Set the bottom navigation selection to Resources
+            bottomNav.setSelectedItemId(R.id.nav_resources);
         }
 
         bottomNav.setOnItemSelectedListener(item -> {
