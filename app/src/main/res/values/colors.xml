@@ -12,4 +12,13 @@
     <color name="background_light">#F8F9FA</color>
 
     <color name="edit_text_bg">#F1F3F4</color>
+
+    <!-- New Design Colors -->
+    <color name="dark_bg">#050B10</color>
+    <color name="card_bg_dark">#121A21</color>
+    <color name="text_grey">#9E9E9E</color>
+    <color name="card_green">#A5F3B9</color>
+    <color name="card_lime">#D9F99D</color>
+    <color name="card_purple">#E0E7FF</color>
+    <color name="bottom_nav_bg">#0D151C</color>
 </resources>

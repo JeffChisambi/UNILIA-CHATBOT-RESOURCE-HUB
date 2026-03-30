@@ -3,12 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="12dp"
+    android:layout_marginHorizontal="8dp"
     android:layout_marginVertical="6dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="3dp"
-    app:strokeColor="#EEEEEE"
-    app:strokeWidth="1dp">
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/card_bg_dark">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,18 +16,21 @@
         android:padding="16dp"
         android:gravity="center_vertical">
 
-        <View
-            android:layout_width="4dp"
-            android:layout_height="40dp"
-            android:background="@color/colorSecondary"
-            android:layout_marginEnd="12dp" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#1A2A3A">
 
-        <ImageView
-            android:id="@+id/resource_icon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@android:drawable/ic_menu_agenda"
-            app:tint="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/resource_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_agenda"
+                app:tint="@color/card_green" />
+        </com.google.android.material.card.MaterialCardView>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -42,29 +44,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Resource Title"
-                android:textColor="#212121"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-medium" />
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/resource_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="Short description of the resource."
-                android:textColor="#616161"
+                android:text="Short description..."
+                android:textColor="@color/text_grey"
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_open"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_open"
-            android:textColor="@color/colorPrimary"
-            android:textStyle="bold"
-            app:rippleColor="#200D47A1" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_more"
+            app:tint="@color/text_grey"
+            android:contentDescription="More options" />
+
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
